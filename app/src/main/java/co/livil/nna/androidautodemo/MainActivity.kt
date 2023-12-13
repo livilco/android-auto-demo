@@ -51,7 +51,7 @@ class MainActivity : ComponentActivity() {
                 val scope = rememberCoroutineScope()
 
                 NotificationHandler.replies.collectAsState(initial = null).value.let {
-                    if (!it.isNullOrEmpty()) {
+                    if (it is String && it.isNotEmpty()) {
                         scope.launch {
                             snackbarHostState.showSnackbar("Reply: ${it}")
                         }
