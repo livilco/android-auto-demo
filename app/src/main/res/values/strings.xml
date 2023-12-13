@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidAutodemo</string>
+    <string name="notification__channel_name">Demo Notifications</string>
+    <string name="notification__channel_description">Demo notifications sent to the system, and by extension to Android Auto</string>
+</resources>
